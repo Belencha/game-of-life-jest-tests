@@ -1,0 +1,19 @@
+{
+    "name": "jest-tests",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --verbose --maxWorkers=50%",
+        "test:cover": "jest --coverage",
+        "test:watch": "jest --watch --coverage"
+    },
+    "author": "superzadeh <superzadeh@outlook.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-jest": "24.9.0",
+        "babel-polyfill": "6.26.0",
+        "@babel/preset-env": "7.16.11",
+        "jest": "24.9.0"
+    }
+}
