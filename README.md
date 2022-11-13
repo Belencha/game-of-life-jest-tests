@@ -19,6 +19,9 @@ npm install
 npm test
 ```
 
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/6985234/201547891-3c4f6958-bf6e-487a-b98e-bf7d798e9d71.png">
+
+
 Or you can use built-in watch mode:
 
 ```bash
