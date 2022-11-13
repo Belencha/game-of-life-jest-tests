@@ -11,9 +11,6 @@ export class Cell {
     numberOfLivingCells += allCellNeighbourgs.filter(cell => cell.getStatus() == "alive").length;
     this._numberOfNeighboursAlive = numberOfLivingCells;
   }
-  setStatus(status) {
-    this._status = status;
-  }
   getStatus() {
     return this._status;
   }
