@@ -86,3 +86,13 @@ test("Board 6x6 is able to correctly iterate twice", () => {
     const outputStates = boardOutput.getCells().map(cellsRow => cellsRow.map(cell => cell.getStatus()));
     expect(inputStates).toEqual(outputStates);
 });
+
+test("Board 6x6 is able to correctly iterate three times", () => {
+    const INPUT = [["dead", "dead", "alive", "dead", "alive", "dead"], ["dead", "alive", "alive", "dead", "alive", "alive"], ["dead", "dead", "alive", "dead", "alive", "dead"], ["dead", "dead", "alive", "alive", "alive", "dead"], ["dead", "dead", "alive", "dead", "alive", "dead"], ["dead", "alive", "alive", "dead", "alive", "dead"]];
+    const OUTPUT = [["dead", "alive", "alive", "dead", "alive", "alive"], ["dead", "alive", "alive", "dead", "alive", "alive"], ["dead", "dead", "alive", "dead", "dead", "dead"], ["dead", "dead", "dead", "alive", "dead", "alive"], ["dead", "dead", "dead", "alive", "dead", "alive"], ["dead", "dead", "dead", "dead", "dead", "dead"]];
+    const boardInput = new Board(INPUT);
+    const boardOutput = new Board(OUTPUT);
+    const inputStates = boardInput.iterates().iterates().iterates().getCells().map(cellsRow => cellsRow.map(cell => cell.getStatus()));
+    const outputStates = boardOutput.getCells().map(cellsRow => cellsRow.map(cell => cell.getStatus()));
+    expect(inputStates).toEqual(outputStates);
+});
