@@ -31,4 +31,7 @@ npm run test:watch
 npm run test:cover
 ```
 
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/6985234/201547800-f9d5c37b-42e3-47e7-9435-0a80c2d02ec4.png">
+
+
 Note: coverage is also included in watch mode.
