@@ -45,6 +45,6 @@ export class Board {
         this._cells.map((cellsRow) => 
             cellsRow.map((cell) => cell.updateSituation())
         );
-        return this._cells;
+        return this;
     }
 }
